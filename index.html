@@ -1,25 +1,33 @@
-<p>Shopping Abroad — English for Travelers</p>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shopping Abroad — English for Travelers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=Bodoni+Moda:ital,wght@0,400;0,500;1,400&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
   :root {
-    --color-bg: #FAF8F5;
-    --color-bg-warm: #F5F0EA;
+    --color-bg: #F7F6FA;
+    --color-bg-warm: #EFEDF5;
     --color-bg-card: #FFFFFF;
-    --color-ink: #1A1A1A;
-    --color-ink-soft: #4A4540;
-    --color-ink-muted: #8A8279;
-    --color-accent: #8B6914;
-    --color-accent-light: #C4991A;
-    --color-accent-bg: #FBF6EB;
+    --color-ink: #1A1830;
+    --color-ink-soft: #423F58;
+    --color-ink-muted: #7F7B95;
+    --color-accent: #4B438C;
+    --color-accent-light: #B7AAE0;
+    --color-accent-bg: #F1EFFA;
     --color-green: #2D6A4F;
     --color-green-bg: #F0F7F3;
     --color-coral: #B8553A;
     --color-coral-bg: #FDF2EF;
     --color-blue: #2B5C8A;
     --color-blue-bg: #EEF3F8;
-    --color-purple: #6B4C8A;
-    --color-purple-bg: #F4F0F8;
-    --color-border: #E8E2DA;
-    --color-border-light: #F0ECE6;
+    --color-purple: #8A5A7A;
+    --color-purple-bg: #F7EFF4;
+    --color-border: #E2E0EC;
+    --color-border-light: #ECEBF3;
     --font-display: 'Playfair Display', Georgia, serif;
     --font-body: 'Source Serif 4', Georgia, serif;
     --font-ui: 'DM Sans', sans-serif;
@@ -47,7 +55,7 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background: linear-gradient(165deg, #1A1410 0%, #2C2218 35%, #3D2E1A 65%, #1A1410 100%);
+    background: linear-gradient(165deg, #16142B 0%, #221F3D 35%, #3B3670 65%, #16142B 100%);
   }
 
   .hero::before {
@@ -55,8 +63,8 @@
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(ellipse 80% 50% at 20% 40%, rgba(139,105,20,0.15) 0%, transparent 60%),
-      radial-gradient(ellipse 60% 40% at 80% 60%, rgba(196,153,26,0.08) 0%, transparent 50%);
+      radial-gradient(ellipse 80% 50% at 20% 40%, rgba(75,67,140,0.15) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 40% at 80% 60%, rgba(183,170,224,0.08) 0%, transparent 50%);
     z-index: 1;
   }
 
@@ -64,7 +72,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='<a href="http://www.w3.org/2000/svg" class="redactor-autoparser-object">http://www.w3.org/2000/svg</a>'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C4991A' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23B7AAE0' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     opacity: 0.5;
     z-index: 1;
   }
@@ -91,18 +99,18 @@
     letter-spacing: 0.25em;
     text-transform: uppercase;
     color: var(--color-accent-light);
-    border: 1px solid rgba(196,153,26,0.3);
+    border: 1px solid rgba(183,170,224,0.3);
     padding: 0.5rem 1.5rem;
     border-radius: 100px;
     margin-bottom: 2.5rem;
-    background: rgba(196,153,26,0.05);
+    background: rgba(183,170,224,0.05);
   }
 
   .hero h1 {
     font-family: var(--font-display);
     font-size: clamp(2.8rem, 6vw, 5rem);
     font-weight: 400;
-    color: #FAF8F5;
+    color: #F7F6FA;
     line-height: 1.15;
     margin-bottom: 0.5rem;
     letter-spacing: -0.01em;
@@ -116,7 +124,7 @@
   .hero-sub {
     font-family: var(--font-body);
     font-size: 1.15rem;
-    color: rgba(250,248,245,0.55);
+    color: rgba(247,246,250,0.55);
     font-weight: 300;
     margin-top: 1.5rem;
     line-height: 1.7;
@@ -139,7 +147,7 @@
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-    color: rgba(250,248,245,0.35);
+    color: rgba(247,246,250,0.35);
     font-family: var(--font-ui);
     font-size: 0.7rem;
     letter-spacing: 0.15em;
@@ -147,7 +155,7 @@
     animation: pulseScroll 2.5s ease-in-out infinite;
   }
 
-  .hero-scroll svg { width: 18px; height: 18px; stroke: rgba(250,248,245,0.35); }
+  .hero-scroll svg { width: 18px; height: 18px; stroke: rgba(247,246,250,0.35); }
 
   @keyframes pulseScroll {
     0%, 100% { opacity: 0.4; transform: translateY(0); }
@@ -159,7 +167,7 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(250,248,245,0.92);
+    background: rgba(247,246,250,0.92);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--color-border-light);
@@ -413,7 +421,7 @@
   .speaker-you {
     background: var(--color-accent-bg);
     color: var(--color-accent);
-    border: 1.5px solid rgba(139,105,20,0.2);
+    border: 1.5px solid rgba(75,67,140,0.2);
   }
 
   .speaker-them {
@@ -479,22 +487,14 @@
   /* ========== CULTURAL INSIGHT ========== */
   .cultural-block {
     background: linear-gradient(135deg, var(--color-purple-bg), var(--color-bg));
-    border: 1px solid rgba(107,76,138,0.12);
+    border: 1px solid rgba(138,90,122,0.12);
     border-radius: 12px;
     padding: 1.8rem 2rem;
     margin: 2rem 0;
     position: relative;
   }
 
-  .cultural-block::before {
-    content: '🌍';
-    font-size: 1.3rem;
-    position: absolute;
-    top: -0.7rem;
-    left: 1.5rem;
-    background: var(--color-bg);
-    padding: 0 0.5rem;
-  }
+  .cultural-block::before{content:none}
 
   .cultural-block h4 {
     font-family: var(--font-ui);
@@ -522,15 +522,7 @@
     position: relative;
   }
 
-  .scenario-alert::before {
-    content: '⚠️';
-    font-size: 1.2rem;
-    position: absolute;
-    top: -0.7rem;
-    left: 1.5rem;
-    background: var(--color-bg);
-    padding: 0 0.5rem;
-  }
+  .scenario-alert::before{content:none}
 
   .scenario-alert h4 {
     font-family: var(--font-ui);
@@ -551,22 +543,14 @@
   /* ========== PRO TIP ========== */
   .pro-tip {
     background: linear-gradient(135deg, var(--color-accent-bg), var(--color-bg));
-    border: 1px solid rgba(139,105,20,0.15);
+    border: 1px solid rgba(75,67,140,0.15);
     border-radius: 12px;
     padding: 1.8rem 2rem;
     margin: 2rem 0;
     position: relative;
   }
 
-  .pro-tip::before {
-    content: '💡';
-    font-size: 1.2rem;
-    position: absolute;
-    top: -0.7rem;
-    left: 1.5rem;
-    background: var(--color-bg);
-    padding: 0 0.5rem;
-  }
+  .pro-tip::before{content:none}
 
   .pro-tip h4 {
     font-family: var(--font-ui);
@@ -652,7 +636,25 @@
     opacity: 1;
     transform: translateY(0);
   }
+
+/* hero: same sizes and spacing as the reference module */
+.hero-badge{font-size:.67rem;letter-spacing:.28em;padding:.45rem 1.4rem;margin-bottom:2rem}
+.hero h1{font-size:clamp(2.5rem,5.5vw,4.6rem);line-height:1.12;margin-bottom:0}
+.hero-divider{margin:2rem auto}
+.hero-sub{margin-top:0;max-width:540px}
+.hero-scroll{margin-top:3.5rem;gap:.4rem;font-size:.62rem;letter-spacing:.2em}
+.hero-scroll svg{width:16px;height:16px}
+
+/* ═══ STANDARD FOOTER — identical on every Viaje Bem module ═══ */
+footer.footer{text-align:center;padding:3.5rem 2rem;border-top:1px solid #ECEEF4;margin-top:3rem;line-height:1.75}
+footer.footer .footer-b{font-family:'Bodoni Moda',Georgia,serif;font-size:1.25rem;font-weight:400;color:#141B2D;margin-bottom:.35rem}
+footer.footer .footer-t{font-family:'Nunito Sans',sans-serif;font-size:.76rem;color:#7A8299;line-height:1.75}
+footer.footer .sig{display:flex;flex-direction:column;align-items:center;gap:1.1rem;margin-top:2.2rem;padding-top:2rem;border-top:1px solid #ECEEF4}
+footer.footer .sig-n{font-family:'Bodoni Moda',Georgia,serif;font-size:1.05rem;font-weight:400;color:#141B2D}
+footer.footer .sig-r{font-family:'Nunito Sans',sans-serif;font-size:.6rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#C9A84C;margin-top:.15rem}
 </style>
+</head>
+<body>
 <!-- ==================== HERO ==================== -->
 <section class="hero">
   <div class="hero-content">
@@ -691,54 +693,7 @@
   </div>
 </nav>
 <!-- ==================== COURSE BODY ==================== -->
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p><main class="course-body"><p></p>
-<!-- ============================== SEÇÃO 1 ============================== -->
+<main class="course-body"><!-- ============================== SEÇÃO 1 ============================== -->
 <section class="module-section" id="s1">
   <div class="section-label"><span class="num">1</span> Getting Started</div>
   <h2 class="section-title">Entrando na Loja</h2>
@@ -998,7 +953,7 @@
     <div class="phrase-card">
       <div class="phrase-en">"Where are the fitting rooms?"</div>
       <div class="phrase-pt">Onde ficam os provadores?</div>
-      <div class="phrase-note tip"><strong>Fitting room</strong> (EUA) ou <strong>changing room</strong> (Reino Unido). Ambos são corretos.</div>
+      <div class="phrase-note tip"><strong>Fitting room</strong> = provador.</div>
     </div>
 
     <div class="phrase-card">
@@ -1039,8 +994,8 @@
     <div class="vocab-item"><div class="vocab-en">oversized</div><div class="vocab-pt">tamanho acima proposital</div></div>
     <div class="vocab-item"><div class="vocab-en">true to size</div><div class="vocab-pt">fiel ao tamanho</div></div>
     <div class="vocab-item"><div class="vocab-en">runs small / runs large</div><div class="vocab-pt">veste menor / veste maior</div></div>
-    <div class="vocab-item"><div class="vocab-en">hemmed / tailored</div><div class="vocab-pt">ajustado / sob medida</div></div>
-    <div class="vocab-item"><div class="vocab-en">length / inseam</div><div class="vocab-pt">comprimento / gancho</div></div>
+    <div class="vocab-item"><div class="vocab-en">hemmed / tailored</div><div class="vocab-pt">com a barra feita / ajustado sob medida</div></div>
+    <div class="vocab-item"><div class="vocab-en">length / inseam</div><div class="vocab-pt">comprimento / entreperna</div></div>
   </div>
 
   <!-- DIALOGUE -->
@@ -1218,7 +1173,7 @@
     <div class="phrase-card">
       <div class="phrase-en">"Where can I pay for this?" / "Where's the register?"</div>
       <div class="phrase-pt">Onde posso pagar? / Onde fica o caixa?</div>
-      <div class="phrase-note tip"><strong>Register</strong> (EUA) ou <strong>till</strong> (Reino Unido) = caixa registradora. <strong>"Checkout"</strong> também funciona.</div>
+      <div class="phrase-note tip"><strong>Register</strong> = caixa registradora. <strong>"Checkout"</strong> também funciona.</div>
     </div>
 
     <div class="phrase-card">
@@ -1363,8 +1318,8 @@
     <div class="dialogue-line">
       <div class="dialogue-speaker speaker-you">You</div>
       <div class="dialogue-bubble">
-        <div class="en">Can I get a printed receipt? I may need it for tax refund purposes.</div>
-        <div class="pt">Posso receber o recibo impresso? Posso precisar para fins de restituição de imposto.</div>
+        <div class="en">Can I get a printed receipt? I may need it for customs back home.</div>
+        <div class="pt">Posso receber o recibo impresso? Posso precisar dele na alfândega, na volta.</div>
       </div>
     </div>
 
@@ -1594,8 +1549,8 @@
     <div class="phrase-group-title">Cobrança errada</div>
 
     <div class="phrase-card">
-      <div class="phrase-en">"Excuse me, I think there's been a mistake on my bill."</div>
-      <div class="phrase-pt">Com licença, acho que houve um erro na minha conta.</div>
+      <div class="phrase-en">"Excuse me, I think there's been a mistake on my receipt."</div>
+      <div class="phrase-pt">Com licença, acho que houve um erro no meu recibo.</div>
     </div>
 
     <div class="phrase-card">
@@ -1624,7 +1579,7 @@
 
     <div class="phrase-card">
       <div class="phrase-en">"There's a stain / a tear / a missing button on this."</div>
-      <div class="phrase-pt">Tem uma mancha / um rasgado / um botão faltando nesse.</div>
+      <div class="phrase-pt">Tem uma mancha / um rasgo / um botão faltando nesse.</div>
     </div>
 
     <div class="phrase-card">
@@ -1700,8 +1655,8 @@
     </div>
 
     <div class="phrase-card">
-      <div class="phrase-en">"Will this work with international voltage? My country uses 220V."</div>
-      <div class="phrase-pt">Isso funciona com voltagem internacional? Meu país usa 220V.</div>
+      <div class="phrase-en">"Is this dual voltage? I'll need it to work on 220V."</div>
+      <div class="phrase-pt">Isso é bivolt? Vou precisar que funcione em 220V.</div>
     </div>
 
     <div class="phrase-card">
@@ -1711,7 +1666,7 @@
 
     <div class="phrase-card">
       <div class="phrase-en">"What type of plug does this use? Will I need an adapter?"</div>
-      <div class="phrase-pt">Que tipo de tomada usa? Vou precisar de um adaptador?</div>
+      <div class="phrase-pt">Que tipo de plugue usa? Vou precisar de um adaptador?</div>
     </div>
 
     <div class="phrase-card">
@@ -1822,7 +1777,7 @@
     <div class="vocab-item"><div class="vocab-en">white gold / rose gold</div><div class="vocab-pt">ouro branco / ouro rosé</div></div>
     <div class="vocab-item"><div class="vocab-en">platinum</div><div class="vocab-pt">platina</div></div>
     <div class="vocab-item"><div class="vocab-en">gemstone</div><div class="vocab-pt">pedra preciosa</div></div>
-    <div class="vocab-item"><div class="vocab-en">setting (prong / bezel)</div><div class="vocab-pt">cravação (garra / chanfro)</div></div>
+    <div class="vocab-item"><div class="vocab-en">setting (prong / bezel)</div><div class="vocab-pt">cravação (garras / aro)</div></div>
     <div class="vocab-item"><div class="vocab-en">clasp</div><div class="vocab-pt">fecho</div></div>
     <div class="vocab-item"><div class="vocab-en">bespoke / custom-made</div><div class="vocab-pt">sob medida / feito sob encomenda</div></div>
   </div>
@@ -1927,7 +1882,7 @@
 
     <div class="phrase-card">
       <div class="phrase-en">"I have a food allergy. Does this contain nuts / gluten / dairy?"</div>
-      <div class="phrase-pt">Tenho alergia alimentar. Isso contém nozes / glúten / laticínios?</div>
+      <div class="phrase-pt">Tenho alergia alimentar. Isso contém castanhas / glúten / laticínios?</div>
     </div>
 
     <div class="phrase-card">
@@ -2049,7 +2004,7 @@
     <div class="phrase-card">
       <div class="phrase-en">"I take this medication regularly. Can I get it here without a local prescription?"</div>
       <div class="phrase-pt">Tomo esse remédio regularmente. Consigo comprá-lo aqui sem receita local?</div>
-      <div class="phrase-note warning">Muitos medicamentos comuns no Brasil exigem receita nos EUA e vice-versa. Sempre leve sua receita original e, se possível, traduzida.</div>
+      <div class="phrase-note warning">Muitos medicamentos comuns no Brasil exigem receita nos EUA e vice-versa. Sempre leve sua receita original e, se possível, traduzida. Nos EUA, porém, farmácias não aviam receita estrangeira — se precisar do remédio lá, procure uma <strong>urgent care</strong> ou telemedicina para obter uma receita local.</div>
     </div>
 
     <div class="phrase-card">
@@ -2155,105 +2110,15 @@
 </section>
 <!-- ==================== FOOTER ==================== -->
 <div class="section-sep"><span class="diamond"></span></div>
-<footer class="course-footer">
-  <div class="footer-brand">Shopping Abroad — English for Travelers</div>
-  <p class="footer-text">
-    Conteúdo exclusivo para fins educacionais.<br>
-    Desenvolvido com excelência para alunos que buscam comunicação internacional de alto nível.
-  </p>
+<footer class="footer">
+  <div class="footer-b">Shopping Abroad — English for Travelers</div>
+  <p class="footer-t">Conteúdo exclusivo para fins educacionais.<br>Desenvolvido com excelência para alunos que buscam comunicação internacional de alto nível.</p>
+  <div class="sig">
+    <div><div class="sig-n">Thaiana Faria</div><div class="sig-r">Especialista em Inglês Médico e Comunicação Científica · MD Talk</div></div>
+    <div><div class="sig-n">Thiago Faria</div><div class="sig-r">Produção de Conteúdo Técnico · The Engine Lab</div></div>
+  </div>
 </footer>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p></main>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+</main>
 <!-- ==================== SCROLL ANIMATION ==================== -->
+</body>
+</html>
